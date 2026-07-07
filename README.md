@@ -1,6 +1,6 @@
 # QA Automation Test Task (Playwright + Pytest)
 
-Automated UI test suite for [The Internet Herokuapp](https://herokuapp.com) built using Python 3.13, Pytest, Playwright, and the Page Object Model (POM) pattern.
+Automated UI test suite for [The Internet Herokuapp](https://the-internet.herokuapp.com) built using Python 3.13, Pytest, Playwright, and the Page Object Model (POM) pattern.
 
 ## Project Structure
 ```text
@@ -57,12 +57,11 @@ Ensure **Python 3.13** is installed on your local machine.
    Create a `.env` file in the root directory. You can copy the structure from `.env.example` or use the template below:
    
    ```text
-   BASE_URL=https://herokuapp.com
+   BASE_URL=https://the-internet.herokuapp.com
    VALID_USER=tomsmith
    VALID_PASS=SuperSecretPassword!
    ```
    *Note: The `.env` file is included in `.gitignore` and will remain strictly local.*
-
 
 ## Running Tests
 
@@ -72,7 +71,7 @@ pytest
 ```
 
 ### Environment-Dependent Approach (Changing Base URL)
-To override the default URL dynamically on the fly without changing the `.env` file, change the `BASE_URL` variable in your terminal before execution [сторонняя ссылка]:
+To override the default URL dynamically on the fly without changing the `.env` file, change the `BASE_URL` variable in your terminal before execution:
 
 **macOS / Linux:**
 ```bash
